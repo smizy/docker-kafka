@@ -11,9 +11,6 @@ eval $(docker-machine env default)
 # network 
 docker network create vnet
 
-# make docker-compose.yml 
-./make_docker_compose_yml.sh hdfs hbase tsdb > docker-compose.yml
-
 # kafka startup (zookeeper, kafka)
 docker-compose up -d
 
